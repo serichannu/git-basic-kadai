@@ -1,0 +1,53 @@
+serina@homuratyann MINGW64 ~ (main)
+$ mkdir git_challenge
+
+serina@homuratyann MINGW64 ~ (main)
+$ cd git_challenge
+
+serina@homuratyann MINGW64 ~/git_challenge (main)
+$ echo "Hello,world!"　>> hello_world.txt
+
+serina@homuratyann MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'git_challenge/hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+serina@homuratyann MINGW64 ~/git_challenge (main)
+$ git commit -m "１回目"
+[main (root-commit) df04205] １回目
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_challenge/hello_world.txt
+
+serina@homuratyann MINGW64 ~/git_challenge (main)
+$ vi hello_world.txt
+
+serina@homuratyann MINGW64 ~/git_challenge (main)
+$ vi hello_world.txt
+
+serina@homuratyann MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'git_challenge/hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+serina@homuratyann MINGW64 ~/git_challenge (main)
+$ git commit -m hello_world.txt
+[main 713f39c] hello_world.txt
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+serina@homuratyann MINGW64 ~/git_challenge (main)
+$ git commit --amend -m "2回目"
+[main e02f8aa] 2回目
+ Date: Wed Nov 29 17:10:28 2023 +0900
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+serina@homuratyann MINGW64 ~/git_challenge (main)
+$ git log
+commit e02f8aae5c1fc10b79364fc18c62ba0f61558dd9 (HEAD -> main)
+Author: serichannu <serina.chappy@icloud.com>
+Date:   Wed Nov 29 17:10:28 2023 +0900
+
+    2回目
+
+commit df042051280d96e0a355b7972fc9408b26427af7
+Author: serichannu <serina.chappy@icloud.com>
+Date:   Wed Nov 29 17:06:18 2023 +0900
+
+    １回目
